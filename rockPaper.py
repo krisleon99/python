@@ -5,21 +5,34 @@ __author__ = 'kris'
 
 
 if __name__ == '__main__':
-  print("Rocks = r")
-  print("Scissors = s")
-  print("Paper = p")
-  player1 = raw_input("player one says:")
-  player2 = raw_input("payer two says;")
 
-  if player1 == "r":
-    if player2 =="r":
-      print("equals")
-    elif player2 == "p":
-      print("Player two wins")
-    else:
-      print("player one wins")
+  game = "y"
+  while (game=="y"):
+    print("Rocks = r")
+    print("Scissors = s")
+    print("Paper = p")
+    player1 = raw_input("player one says:")
+    player2 = raw_input("payer two says;")
 
-  a = 5
-  while (a>0):
-    print(a)
-    a -= 1
+    if player1 == "r":
+      if player2 =="r":
+        print("equals")
+      elif player2 == "p":
+        print("Player two wins")
+      else:
+        print("player one wins")
+    if player1 == "s":
+      if player2 =="r":
+        print("player two wins")
+      elif player2 == "p":
+        print("Player one wins")
+      else:
+        print("equals")
+    if player1 == "p":
+      if player2 =="r":
+        print("player one wins")
+      elif player2 == "p":
+        print("equals")
+      else:
+        print("player one wins")
+    game = raw_input("game agayn?")
