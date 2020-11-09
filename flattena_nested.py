@@ -3,18 +3,15 @@ print(item)
 arr_items = []
 
 def check(value):
-	print(value)
-	if isinstance(value, str):
-		arr_items.append(value)
-	elif isinstance(value, int):
-		arr_items.append(value)
-	elif isinstance(value, list):
+	if isinstance(value, list):
 		for x in value:
 			check(x)
-	
-	print("tu lista es:")
-	print(arr_items)
+	else:
+		arr_items.append(value)
 	
 
 for x in item:
 	check(x)
+	
+print("tu lista final es:")
+print(arr_items)
