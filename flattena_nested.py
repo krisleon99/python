@@ -13,5 +13,5 @@ def check(value):
 for x in item:
 	check(x)
 	
-print("tu lista final es:")
+print("Tu lista final es: -_-")
 print(arr_items)
