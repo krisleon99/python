@@ -40,7 +40,7 @@ def search_less(a, mid, number):
 
 
 if __name__ == '__main__':
-  number = int(raw_input("enter a number"))
+  number = int(raw_input("enter a number 0:"))
   less_number(number)
 
 
