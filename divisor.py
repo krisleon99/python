@@ -15,6 +15,6 @@ def div(number):
   return divisors
 
 if __name__ == '__main__':
-  num = int(raw_input("Enter your number"))
+  num = int(raw_input("Please Enter your number"))
   print(div(num))
 
